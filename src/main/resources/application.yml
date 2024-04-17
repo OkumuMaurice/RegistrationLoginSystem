@@ -1,0 +1,33 @@
+server:
+  error:
+    include-message: always
+  port: 9700
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/registration
+    username: root
+    password: 35697108@Ok
+
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connection timeout: 5000
+          timeout: 3000
+
